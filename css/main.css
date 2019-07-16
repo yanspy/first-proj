@@ -1,0 +1,376 @@
+@font-face {
+	font-family: 'MuseoSansCyr100';
+	src: url(../Fonts/MuseoSansCyrl100.otf) format("opentype");
+}
+@font-face {
+	font-family: 'MuseoSansCyr300';
+	src: url(../Fonts/MuseoSansCyrl300.otf) format("opentype");
+}
+
+@font-face {
+	font-family: 'MuseoSansCyr900';
+	src: url(../Fonts/MuseoSansCyrl900.otf) format("opentype");
+}
+@font-face {
+	font-family: 'MuseoSansCyr100I';
+	src: url(../Fonts/MuseoSansCyrl100Italic.otf) format("opentype");
+}
+@font-face {
+	font-family: 'MuseoSansCyr300I';
+	src: url(../Fonts/MuseoSansCyrl300Italic.otf) format("opentype");
+}
+@font-face {
+	font-family: 'MuseoSansCyr900I';
+	src: url(../Fonts/MuseoSansCyrl900Italic.otf) format("opentype");
+}
+@font-face {
+	font-family: 'Natasha';
+	src: url(../Fonts/Natasha.ttf) format("truetype");
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;       
+}
+body {
+	font-family: 'MuseoSansCyr300';
+	font-weight: 400;
+}
+ul,
+li {
+	list-style: none;
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: table;  
+}
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+header {
+	text-transform: uppercase;
+	background: url(../img/header-fon.png) no-repeat center top / cover;
+	min-height: 846px;
+	color: #fff;
+}
+.header-logo {
+	font-family: 'MuseoSansCyr900';
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 48px;
+	letter-spacing: 2.04px;
+	display: inline-block;
+}
+.header-logo span {
+	font-family: 'MuseoSansCyr100';
+}
+.menu {
+	display: inline-block;
+	margin-left: 177px;
+}
+.menu li + li {
+	padding-left: 40px;
+}
+.menu a {
+	font-family: 'MuseoSansCyr900';
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 48px;
+	letter-spacing: 1.8px;
+}
+.header-email {
+	float: right;
+	line-height: 48px;
+	font-family: 'MuseoSansCyr300';
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 1.56px;
+	text-transform: none;
+}
+.header-email:after {
+	content: '';
+	width: 135px;
+	height: 1px;
+	opacity: 0.35;
+	display: block;
+	margin-top: -14px;
+	background-color: #fff;
+}
+.header__content {
+	text-align: center;
+	padding-top: 320px;
+}
+.header__title-box {
+	max-width: 730px;
+	font-size: 49px;
+	font-weight: 400;
+	line-height: 55px;
+	margin: 0 auto;
+}
+.header__title {
+	font-family: 'Natasha';
+	letter-spacing: 5.88px;
+}
+.header__text {
+	font-family: 'MuseoSansCyr100';
+	font-size: 29px;
+	letter-spacing: 3.48px;
+}
+.header__bottom {
+	text-align: center;
+}
+.header__bottom .container img{
+	margin: 0 auto;
+	display: inline;
+	margin-top: 260px;
+}
+#about {
+	padding-top: 86px;
+	padding-bottom: 95px;
+}
+.about__main-title,
+.skills__title,
+.works__title {
+	color: #22241b;
+	font-family: 'Natasha';
+	font-size: 37px;
+	font-weight: 400;
+	line-height: 55px;
+	text-transform: uppercase;
+	letter-spacing: 4.44px;
+}
+.about__inner {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.about__left {
+	max-width: 436px;
+}
+.about__title {
+	opacity: 0.66;
+	color: #22241b;
+	font-family: Natasha;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 55px;
+	text-transform: uppercase;
+	letter-spacing: 2.64px;
+	margin-bottom: 20px;
+}
+.about__text {
+	color: #22241b;
+	font-family: 'MuseoSansCyr300';
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 27px;
+	letter-spacing: 0.3px;
+}
+.about__text + .about__text {
+	margin-top: 25px;
+}
+.about__item {
+	width: 103px;
+	height: 103px;
+	text-align: center;
+	line-height: 103px;
+	color: #204d15;
+	font-family: 'MuseoSansCyr100';
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 2.4px;
+	margin-bottom: 25px;
+	background: url(../img/about__item.png) no-repeat center top / cover;
+}
+.about__items li + li {
+	margin-left: 45px;
+}
+.about__items li:nth-child(1) {
+	margin-left: 19px;
+}
+.about__items li {
+	text-align: center;
+}
+.about__items li span {
+	font-family: 'MuseoSansCyr100';
+	color: #22241b;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.24px;
+}
+.about__items {
+	margin-bottom: 48px;
+}
+.about__right-bottom {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.about__connection li {
+	display: block;
+	position: relative;
+}
+.about__connection li a {
+	color: #204d15;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 1.68px;
+}
+.about__connection li+li {
+	margin-top: 10px;
+}
+.about__connection li:after {
+	content: '';
+	display: block;
+	width: 132px;
+	height: 1px;
+	opacity: 0.29;
+	background-color: #204d15;
+	position: absolute;
+	left: 0;
+	margin-top: 3px;
+}
+.about__connection-profile {
+	position: relative;
+	width: 250px;
+	height: 64px;
+	margin-left: 30px;
+	margin-top: 8px;
+}
+.about__connection-profile span {
+	opacity: 0.72;
+	color: #22241b;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: italic;
+	letter-spacing: 0.28px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	font-family: "MuseoSansCyr300I";
+}
+#skills {
+	text-transform: uppercase;
+	padding-bottom: 82px;
+}
+.skills__list {
+	margin-top: 60px;
+}
+.skills__list li {
+	display: inline-block;
+}
+.skills__list li+li {
+	margin-left: 40px;
+}
+.sills__item {
+	display: inline-block;
+	width: 61px;
+	height: 61px;
+	text-align: center;
+	line-height: 61px;
+	margin-right: 26px;
+	color: #204d15;
+	font-family: 'MuseoSansCyr300';
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 1.56px;
+	background: url(../img/skills__item.png) no-repeat center top / cover;
+}
+.skills__list li span {
+	opacity: 0.89;
+	color: #22241b;
+	font-family: 'MuseoSansCyr900';
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1.8px;
+}
+.works__list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 58px;
+}
+.works__list li {
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+.works__list li img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.works__item-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.6);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 126px;
+	color: #fff;
+	opacity: 0;
+	transition: all ease .5s;
+}
+.works__item-title {
+	font-family: 'MuseoSansCyr900';
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}
+.works__list li:hover .works__item-overlay {
+	opacity: 1;
+	display: block;
+}
+.works__item-overlay a {
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 0.26px;
+	line-height: 16px;
+	position: relative;
+	margin-top: 10px;
+}
+.works__item-overlay a:after {
+	content: '';
+	display: block;
+	width: 61px;
+	height: 1px;
+	background-color: #fff;
+	opacity: .46;
+	position: absolute;
+	left: 0;
+}
+footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+footer span {
+	opacity: 0.66;
+	color: #22241b;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 55px;
+	text-transform: uppercase;
+	letter-spacing: 1.54px;
+}
